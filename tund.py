@@ -89,3 +89,22 @@ if g==1:
             print("Поражение!")
             print("Победишь в следуйщий раз")
             print(f"Ты победил {p} раз.")
+from keyboard import *
+v1=["kivi, käärid, paber"]
+v2=["kivi, käärid, paber"]
+if m==1:
+    while True:
+        print("kas nängime? esc - välja, enter - mängime")
+    if read_key()=='esc':
+        break
+    elif read_key()=='enter':
+        p1=choice(v1)
+        print("esimene boot:",p1)
+        p2=choice(v2)
+        print("teine bot:",p2)
+    if p1==p2:
+        print("viik")
+    elif p1==v1[0] and p2==v2[1] or p1==v2[0] or p1==v1[1] and p2==v2[2]:
+        print("võitis, 1")
+    else:
+            print("Võitis, 2")
